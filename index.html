@@ -55,18 +55,6 @@
     to   { transform: scale(1.18) translateY(-3%); }
   }
 
-  /* Pantallas anchas (PC / tablet horizontal): la foto vertical se muestra
-     completa y centrada, con los lados difuminados hacia el fondo. */
-  @media (min-aspect-ratio: 1/1) {
-    .bg::before {
-      inset: 0;
-      background-size: auto 100%;
-      background-position: center;
-      -webkit-mask-image: linear-gradient(to right, transparent, #000 30%, #000 70%, transparent);
-              mask-image: linear-gradient(to right, transparent, #000 30%, #000 70%, transparent);
-    }
-  }
-
   /* Capa oscura + toque neón sutil para que todo se lea bien */
   .veil {
     position: fixed;
